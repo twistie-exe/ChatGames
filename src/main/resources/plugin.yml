@@ -1,0 +1,7 @@
+name: ChatGames
+version: '${project.version}'
+main: me.syntax.chatgames.ChatGames
+api-version: 1.17
+prefix: ChatGames
+authors: [ Syntax ]
+description: Easy & Configurable Chat Games

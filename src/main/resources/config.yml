@@ -1,0 +1,73 @@
+# CHAT GAMES
+# V1.0
+# Placeholders: %PLAYER%
+
+games:
+
+  # How often a game starts & How long they last (Seconds)
+  settings:
+    time: 45
+    timeout: 35
+    timeout-message-enabled: true
+
+  # Type a random word from answers:
+  typing:
+    enabled: true
+    answers:
+      - beans
+      - lean
+      - greens
+      - tomato
+      - potato
+      - corn
+    rewards:
+      - "say hi %PLAYER%"
+
+    # Unscramble a randomly scrambled word from answers:
+  unscramble:
+    enabled: true
+    answers:
+      - string
+      - integer
+      - max
+      - fractions
+      - maths
+    rewards:
+      - "say hi %PLAYER%"
+
+    # Reverse back a random word from answers:
+  unreverse:
+    enabled: true
+    answers:
+      - 123
+      - nuts
+      - chocolate
+      - balls
+      - finger
+    rewards:
+      - "say hi %PLAYER%"
+
+    # Fill in a random word from answers:
+  fill-in:
+    enabled: true
+    how-many-underscores:
+      min: 2
+      max: 6
+    answers:
+      - wagwan
+      - whats up
+      - black people
+      - one big family
+      - huge bucket of kfc
+    rewards:
+      - "say hi %PLAYER%"
+
+    # Answer a random trivia question from answers:
+    # Follow the format unless the plugin will error!
+  trivia:
+    enabled: true
+    qna:
+      - When was this plugin made|2021
+    rewards:
+      - "say hi %PLAYER%"
+
