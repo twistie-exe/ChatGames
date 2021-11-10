@@ -21,7 +21,7 @@ games:
       - potato
       - corn
     rewards:
-      - "say hi %PLAYER%"
+      - "say typing %PLAYER%"
 
     # Unscramble a randomly scrambled word from answers:
   unscramble:
@@ -33,7 +33,7 @@ games:
       - fractions
       - maths
     rewards:
-      - "say hi %PLAYER%"
+      - "say unscramble %PLAYER%"
 
     # Reverse back a random word from answers:
   unreverse:
@@ -45,7 +45,7 @@ games:
       - balls
       - finger
     rewards:
-      - "say hi %PLAYER%"
+      - "say unreverse %PLAYER%"
 
     # Fill in a random word from answers:
   fill-in:
@@ -60,7 +60,7 @@ games:
       - one big family
       - huge bucket of kfc
     rewards:
-      - "say hi %PLAYER%"
+      - "say fill %PLAYER%"
 
     # Answer a random trivia question from answers:
     # Follow the format unless the plugin will error!
@@ -69,5 +69,5 @@ games:
     qna:
       - When was this plugin made|2021
     rewards:
-      - "say hi %PLAYER%"
+      - "say trivia %PLAYER%"
 

@@ -29,7 +29,7 @@ public class Games {
                 new OnChatListener(ChatGames.getInstance(), typingWord);
                 Bukkit.getOnlinePlayers().forEach( player -> {
                     player.sendMessage(" ");
-                    player.sendMessage(Util.colourise("                         &c&lC&6&lH&e&lA&a&lT &b&lG&d&lA&c&lM&6&lE"));
+                    player.sendMessage(Util.colourise("                        &c&lC&6&lH&e&lA&a&lT &b&lG&d&lA&c&lM&6&lE"));
                     player.sendMessage(Util.colourise("           &eThe first to type '" + typingWord + "' wins!"));
                     player.sendMessage(Util.colourise("              Type your answer in chat!"));
                     player.sendMessage(" ");
@@ -43,7 +43,7 @@ public class Games {
                 new OnChatListener(ChatGames.getInstance(), unscrambleWord);
                 Bukkit.getOnlinePlayers().forEach(player -> {
                     player.sendMessage(" ");
-                    player.sendMessage(Util.colourise("                         &c&lC&6&lH&e&lA&a&lT &b&lG&d&lA&c&lM&6&lE"));
+                    player.sendMessage(Util.colourise("                        &c&lC&6&lH&e&lA&a&lT &b&lG&d&lA&c&lM&6&lE"));
                     player.sendMessage(Util.colourise("        &eThe first to unscramble '" + Util.randomizePhrase(unscrambleWord) + "' wins!"));
                     player.sendMessage(Util.colourise("              Type your answer in chat!"));
                     player.sendMessage(" ");
@@ -59,7 +59,7 @@ public class Games {
                 new OnChatListener(ChatGames.getInstance(), fillWord);
                 Bukkit.getOnlinePlayers().forEach(player -> {
                     player.sendMessage(" ");
-                    player.sendMessage(Util.colourise("                         &c&lC&6&lH&e&lA&a&lT &b&lG&d&lA&c&lM&6&lE"));
+                    player.sendMessage(Util.colourise("                        &c&lC&6&lH&e&lA&a&lT &b&lG&d&lA&c&lM&6&lE"));
                     player.sendMessage(Util.colourise("        &eThe first to fill-in '" + Util.replacePartOfWord(fillWord, randNum) + "' wins!"));
                     player.sendMessage(Util.colourise("              Type your answer in chat!"));
                     player.sendMessage(" ");
@@ -76,7 +76,7 @@ public class Games {
                 new OnChatListener(ChatGames.getInstance(), getQNA.getAnswer());
                 Bukkit.getOnlinePlayers().forEach(player -> {
                     player.sendMessage(" ");
-                    player.sendMessage(Util.colourise("                         &c&lC&6&lH&e&lA&a&lT &b&lG&d&lA&c&lM&6&lE"));
+                    player.sendMessage(Util.colourise("                        &c&lC&6&lH&e&lA&a&lT &b&lG&d&lA&c&lM&6&lE"));
                     player.sendMessage(Util.colourise("             &e" + getQNA.getQuestion() + "?"));
                     player.sendMessage(Util.colourise("              Type your answer in chat!"));
                     player.sendMessage(" ");
@@ -90,7 +90,7 @@ public class Games {
                 new OnChatListener(ChatGames.getInstance(), unreverseWord);
                 Bukkit.getOnlinePlayers().forEach(player -> {
                     player.sendMessage(" ");
-                    player.sendMessage(Util.colourise("                         &c&lC&6&lH&e&lA&a&lT &b&lG&d&lA&c&lM&6&lE"));
+                    player.sendMessage(Util.colourise("                        &c&lC&6&lH&e&lA&a&lT &b&lG&d&lA&c&lM&6&lE"));
                     player.sendMessage(Util.colourise("        &eThe first to un-reverse '" + Util.reverseString(unreverseWord) + "' wins!"));
                     player.sendMessage(Util.colourise("              Type your answer in chat!"));
                     player.sendMessage(" ");

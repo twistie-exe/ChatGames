@@ -36,7 +36,7 @@ public class OnChatListener implements Listener {
 
         final Player player = event.getPlayer();
         Bukkit.getOnlinePlayers().forEach(player1 -> {
-            player1.sendMessage(Util.colourise("                         &c&lC&6&lH&e&lA&a&lT &b&lG&d&lA&c&lM&6&lE "));
+            player1.sendMessage(Util.colourise("                        &c&lC&6&lH&e&lA&a&lT &b&lG&d&lA&c&lM&6&lE "));
             player1.sendMessage(Util.colourise("    &e" + player.getName() + " &fgave the correct answer first! "));
             player1.sendMessage(Util.colourise("        &7They answered in just &e&n" + Util.roundToDecimal(endTime, 1) + "s&7! "));
         });
@@ -44,7 +44,7 @@ public class OnChatListener implements Listener {
         for (int i = 0; i < reward.size() ; i++) {
             reward.set(i, reward.get(i).replace("%PLAYER%", player.getName()));
         }
-        reward.forEach(str -> Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), str));
+        reward.forEach(str -> Bukkit.getServer().getScheduler().runTask(ChatGames.getInstance(), () -> Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), str)));
 
         isAnswered = true;
         Games.isRunning = false;
@@ -59,7 +59,7 @@ public class OnChatListener implements Listener {
                 Games.isRunning = false;
                 AsyncPlayerChatEvent.getHandlerList().unregister(this);
                 if(ChatGames.getInstance().getConfig().getBoolean("games.settings.timeout-message-enabled")) {
-                    Bukkit.getOnlinePlayers().forEach(player1 -> player1.sendMessage(Util.colourise("&7No-one has answered in time!")));
+                    Bukkit.getOnlinePlayers().forEach(player1 -> player1.sendMessage(Util.colourise("&7No-one has answered in time! The answer was &e&n" + word)));
                 }
             }
         }, Util.convertToSeconds(ChatGames.getInstance().getConfig().getInt("games.settings.timeout")));
